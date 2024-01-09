@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AmountCard from "../components/AmountCard";
 import Table from "../components/Table";
 const Payments = () => {
-  const [selectedTab, setSelectedTab] = useState("payouts");
+  const [selectedTab, setSelectedTab] = useState("payments");
   const activeTableStyle = (tab) => {
     return {
       color: selectedTab === tab ? "white" : "gray",
@@ -68,7 +68,7 @@ const Payments = () => {
 
             <div className=" mt-[10px]">
               <Table
-                payout={selectedTab === "payouts" ? true : false}
+                payments={selectedTab === "payments" ? true : false}
               />
             </div>
           </div>
